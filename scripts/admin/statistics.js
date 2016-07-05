@@ -146,8 +146,12 @@ function init_chart_js_graph_with_datas($type,$qid)
     var $canvas   = document.getElementById(canvasId).getContext("2d");
     var $canva    = $('#'+canvasId);
     var $color    = $canva.data('color');
-    var $labels   = eval("labels_percent_"+$qid);
-    var $grawdata = eval("grawdata_percent_"+$qid);
+    var $labels   = eval("labels_"+$qid);
+    var $grawdata = eval("grawdata_"+$qid);
+    var $total = 0;
+    $.each($grawdata,function() {
+        $total += parseInt(this);
+    });
     var $chartDef = new Array();
 
     $('#legend-no-percent-'+$qid).hide();
@@ -157,7 +161,7 @@ function init_chart_js_graph_with_datas($type,$qid)
     $.each($labels, function($i, $label) {
         $colori = (parseInt($i)+$color);
         $chartDef[$i] = {
-            value: $grawdata[$i],
+            value: Math.round($grawdata[$i]/$total*10000)/100,
             color:"rgba("+COLORS_FOR_SURVEY[$colori]+",0.6)",
             highlight: "rgba("+COLORS_FOR_SURVEY[$colori]+",0.9)",
             label: $label,
