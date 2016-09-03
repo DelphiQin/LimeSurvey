@@ -3655,7 +3655,7 @@ class statistics_helper {
                             break;
                         case 'pdf':
 
-                            $this->pdf->Image($tempdir."/".$cachefilename, 0, 160, 180, 0, '', Yii::app()->getController()->createUrl("admin/survey/sa/view/surveyid/".$surveyid), 'B', true, 150,'C',false,false,0,true);
+                            $this->pdf->Image($tempdir."/".$cachefilename, 0, 160, 180, 0, '', '', 'B', true, 150,'C',false,false,0,true);
 
                             break;
                         case 'html':
