@@ -9,24 +9,11 @@
 <footer class='footer'>
     <div class="container-fluid">
         <div class="row">
-            <!-- Link to manual -->
-            <div class="col-xs-6 col-md-4 col-lg-1 ">
-                <a href='http://www.bbooks.org' onclick='function go(ev) { ev.preventDefault(); var win = window.open("http://www.bbooks.org", "_blank"); win.focus(); }; go(event);'>
-                    <span class="glyphicon glyphicon-info-sign" id="info-footer"></span>
-                </a>
-            </div>
-
-            <!-- Support / Donate -->
-            <div  class="col-xs-6 col-md-4  col-lg-5 text-right"  >
+            <div  class="col-xs-18 col-md-12  col-lg-12 text-right"  >
                 <a href='http://www.bbooks.org' target="_blank">
                     <img alt='<?php eT("Support this project - Donate to "); ?>B-BOOKS' title='<?php eT("Support this project - Donate to "); ?>B-BOOKS' src='<?php echo Yii::app()->getConfig('adminimageurl');?>donate.png'/>
                 </a>
             </div>
-
-            <!-- Lime survey website -->
-<!--            <div class="col-xs-6 col-md-4 col-lg-6 text-right">
-                <a  title='<?php eT("Visit our website!"); ?>' href='http://www.bbooks.org' target='_blank'>B-BOOKS</a><br /><?php echo $versiontitle."  ".$versionnumber." ".$buildtext;?>
-            </div>-->
         </div>
     </div>
 </footer>
