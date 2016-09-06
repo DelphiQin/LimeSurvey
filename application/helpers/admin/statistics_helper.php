@@ -200,7 +200,7 @@ function createChart($iQuestionID, $iSurveyID, $type=null, $lbl, $gdata, $grawda
                 if ($legendsize[1]<320) $gheight=420; else $gheight=$legendsize[1]+100;
                 $graph = new pChart(690+$legendsize[0],$gheight);
                 $graph->drawFilledRectangle(0,0,690+$legendsize[0],$gheight,254,254,254,false);
-//                $graph->loadColorPalette($homedir.DIRECTORY_SEPARATOR.'styles'.DIRECTORY_SEPARATOR.$admintheme.DIRECTORY_SEPARATOR.'images/limesurvey.pal');
+                $graph->loadColorPalette($homedir.DIRECTORY_SEPARATOR.'styles'.DIRECTORY_SEPARATOR.$admintheme.DIRECTORY_SEPARATOR.'images/limesurvey.pal');
                 $graph->setFontProperties($rootdir.DIRECTORY_SEPARATOR.'fonts'.DIRECTORY_SEPARATOR.$chartfontfile,$chartfontsize);
                 $graph->setGraphArea(50,30,500,$gheight-60);
                 $graph->drawFilledRoundedRectangle(7,7,523+$legendsize[0],$gheight-7,5,254,255,254);
@@ -293,7 +293,7 @@ function createChart($iQuestionID, $iSurveyID, $type=null, $lbl, $gdata, $grawda
                 $gheight=ceil($gheight);
                 $graph = new pChart(690,$gheight);
                 $graph->drawFilledRectangle(0,0,690,$gheight,254,254,254,false);
-//                $graph->loadColorPalette($homedir.'/styles/'.$admintheme.'/images/limesurvey.pal');
+                $graph->loadColorPalette($homedir.'/styles/'.$admintheme.'/images/limesurvey.pal');
                 $graph->drawFilledRoundedRectangle(7,7,687,$gheight-3,5,254,255,254);
                 $graph->drawRoundedRectangle(5,5,689,$gheight-1,5,230,230,230);
 
