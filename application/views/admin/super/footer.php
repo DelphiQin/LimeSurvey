@@ -9,9 +9,9 @@
 <footer class='footer'>
     <div class="container-fluid">
         <div class="row">
-            <div  class="col-xs-18 col-md-12  col-lg-12 text-right"  >
+            <div  class="col-xs-18 col-md-12  col-lg-12 text-center"  >
                 <a href='http://www.bbooks.org' target="_blank">
-                    <img alt='<?php eT("Support this project - Donate to "); ?>B-BOOKS' title='<?php eT("Support this project - Donate to "); ?>B-BOOKS' src='<?php echo Yii::app()->getConfig('adminimageurl');?>donate.png'/>
+                    <img alt='<?php eT("Support this project - Donate to "); ?>B-BOOKS' title='<?php eT("Support this project - Donate to "); ?>B-BOOKS' src='<?php echo Yii::app()->getConfig('adminimageurl');?>donate.png' class="img-responsive center-block"/>
                 </a>
             </div>
         </div>
