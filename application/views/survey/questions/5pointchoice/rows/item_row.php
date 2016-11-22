@@ -23,7 +23,10 @@
         <?php echo $checkedState; ?>
         onclick="<?php echo $checkconditionFunction; ?>(this.value, this.name, this.type)"
     />
-    <label for="answer<?php echo $id; ?>" class="answertext radio-label"></label>
+    <!--拒答（五分）-->
+    <label for="answer<?php echo $id; ?>" class="answertext radio-label">
+      
+    </label>
 
     <!--
          The label text is provided inside a div,

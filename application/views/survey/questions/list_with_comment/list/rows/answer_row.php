@@ -24,15 +24,17 @@
             onclick="<?php echo $checkconditionFunction; ?>"
             aria-labelledby="label-<?php echo $id; ?>"
         />
-        <label for="<?php echo $id; ?>" class="answertext radio-label control-label"></label>
+        <label for="<?php echo $id; ?>" class="answertext radio-label control-label" id="label-<?php echo $id; ?>">
+           <?php echo $labeltext;?>
+        </label>
 
         <!--
              The label text is provided inside a div,
              so final user can add paragraph, div, or whatever he wants in the subquestion text
              This field is related to the input thanks to attribute aria-labelledby
         -->
-        <div class="label-text label-clickable" id="label-<?php echo $id; ?>">
-                <?php echo $labeltext;?>
+        <div class="label-text label-clickable">
+                
         </div>
     </div>
 </div>

@@ -14,7 +14,7 @@
 
 <div class="list-unstyled answers-list radio-list">
 
-    <div class='col-xs-12 col-sm-6'>  <!-- Full width on Phone; otherwise half width -->
+    <div class='col-xs-12 col-sm-6 no-border'>  <!-- Full width on Phone; otherwise half width -->
       <div class="btn-group btn-group-justified" data-toggle="buttons" id="<?php echo $name;?>-container">
 
         <!-- Yes -->

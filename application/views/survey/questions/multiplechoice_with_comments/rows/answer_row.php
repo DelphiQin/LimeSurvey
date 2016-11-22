@@ -24,11 +24,11 @@
  */
 ?>
 <!-- answer_row -->
-<tr class='<?php echo $liclasses;?>'>
+<tr class='<?php echo $liclasses;?> mult'>
 
     <!-- Checkbox + label -->
     <!-- <div class="pull-left othertext-label-checkox-container checkbox"  <?php // echo $sDisplayStyle ;?>> -->
-    <td class="checkbox"  <?php echo $sDisplayStyle ;?>>
+    <td class="checkbox"  <?php echo $sDisplayStyle ;?> id="javatbd<?php echo $name; ?>">
         <input
             class="checkbox <?php echo $classes; echo $kpclass; ?>"
             title="<?php echo $title;?>"
@@ -41,15 +41,17 @@
             aria-labelledby="label-<?php echo $id;?>"
           />
 
-        <label for="<?php echo $id;?>" class="answertext control-label"></label>
+        <label for="<?php echo $id;?>" class="answertext control-label" id="label-<?php echo $id;?>">
+             <?php echo $labeltext;?>
+        </label>
 
         <!--
              The label text is provided inside a div,
              so final user can add paragraph, div, or whatever he wants in the subquestion text
              This field is related to the input thanks to attribute aria-labelledby
         -->
-        <div class="label-text label-clickable" id="label-<?php echo $id;?>">
-            <?php echo $labeltext;?>
+        <div class="label-text label-clickable">
+           
         </div>
 
 

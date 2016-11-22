@@ -1,0 +1,26 @@
+<div class="jumbotron welcome">
+	<div class="row">
+
+        <div class="col-md-5 col-md-push-7">
+                  <img class="logo center-block" src="{TEMPLATEURL}files/logo-bs-2.png" alt="Tools for Research">
+        </div>
+
+		<div class="col-md-7 col-md-pull-5">
+			<h1>{SURVEYNAME}</h1>
+			<p class="text-muted surveydescription">{SURVEYDESCRIPTION}</p>
+			<p class="welcome-text">{WELCOME}</p>
+			<p class="text-muted x-questions">{THEREAREXQUESTIONS}</p>
+		</div>
+
+		<!--<div class="col-md-12">
+			<h1>{SURVEYNAME}</h1>
+			<p class="text-muted surveydescription">{SURVEYDESCRIPTION}</p>
+			<p class="welcome-text">{WELCOME}</p>
+			<p class="text-muted x-questions">{THEREAREXQUESTIONS}</p>
+		</div>-->
+
+		<div class="col-md-12 languageswitcher">
+            {LANGUAGECHANGER}
+        </div>
+	</div>
+</div>

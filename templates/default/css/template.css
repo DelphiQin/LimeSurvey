@@ -502,7 +502,7 @@ table > tbody > tr > td.ddprefix {
 
     /* Add some margin for multiple short text */
     .form-group.row {
-        margin-bottom: 15px;
+        margin-bottom: 24px;
     }
 
     /* Force table to not be like tables anymore */
@@ -825,7 +825,7 @@ table.numbers-only th, table.numbers-only input {
      padding-left: 14px;
  }
 .checkbox input[type="checkbox"] {
-    position: static;
+    /*position: static;*/
     margin-left: 0px;
 }
 

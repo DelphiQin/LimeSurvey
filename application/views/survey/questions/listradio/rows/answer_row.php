@@ -22,15 +22,14 @@
         onclick="if (document.getElementById('answer<?php echo $name; ?>othertext') != null) document.getElementById('answer<?php echo $name; ?>othertext').value='';checkconditions(this.value, this.name, this.type)"
         aria-labelledby="label-answer<?php echo $name.$code; ?>"
      />
-    <label for="answer<?php echo $name.$code; ?>" class="control-label radio-label"></label>
+    <label for="answer<?php echo $name.$code; ?>" id="label-answer<?php echo $name.$code; ?>" class="control-label radio-label"><?php echo $answer; ?></label>
 
     <!--
          The label text is provided inside a div,
          so final user can add paragraph, div, or whatever he wants in the subquestion text
          This field is related to the input thanks to attribute aria-labelledby
     -->
-    <div class="label-text label-clickable" id="label-answer<?php echo $name.$code; ?>">
-        <?php echo $answer; ?>
+    <div class="label-text label-clickable">  
     </div>
 </div>
 <!-- end of answer_row -->

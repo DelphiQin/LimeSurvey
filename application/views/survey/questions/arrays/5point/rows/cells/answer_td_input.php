@@ -21,14 +21,14 @@
         onclick="<?php echo $checkconditionFunction; ?>(this.value, this.name, this.type)"
         aria-labelledby="label-answer<?php echo $myfname;?>-<?php echo $i; ?>"
      />
-    <label for="answer<?php echo $myfname;?>-<?php echo $i; ?>"></label>
+    <label for="answer<?php echo $myfname;?>-<?php echo $i; ?>" id="label-answer<?php echo $myfname;?>-<?php echo $i; ?>"></label>
     <!--
          The label text is provided inside a div,
          so final user can add paragraph, div, or whatever he wants in the subquestion text
          This field is related to the input thanks to attribute aria-labelledby
     -->
-    <div class="visible-xs-block label-text label-clickable" id="label-answer<?php echo $myfname;?>-<?php echo $i; ?>">
+    <!-- <div class="visible-xs-block label-text label-clickable">
         <?php echo $i;?>
-    </div>
+    </div> -->
 </td>
 <!-- end of td_input -->

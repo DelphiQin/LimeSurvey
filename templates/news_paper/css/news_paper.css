@@ -2649,6 +2649,7 @@ input[type="search"] {
 }
 .radio label,
 .checkbox label {
+  display:block;
   min-height: 21px;
   padding-left: 20px;
   margin-bottom: 0;

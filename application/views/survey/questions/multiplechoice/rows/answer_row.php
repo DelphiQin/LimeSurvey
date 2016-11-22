@@ -27,15 +27,15 @@
                 aria-labelledby="label-answer<?php echo $name.$title; ?>"
             />
 
-            <label for="answer<?php echo $name.$title; ?>" class="answertext"></label>
+            <label for="answer<?php echo $name.$title; ?>" id="label-answer<?php echo $name.$title; ?>" class="answertext"> <?php echo $question; ?></label>
 
             <!--
                  The label text is provided inside a div,
                  so final user can add paragraph, div, or whatever he wants in the subquestion text
                  This field is related to the input thanks to attribute aria-labelledby
             -->
-            <div class="label-text label-clickable" id="label-answer<?php echo $name.$title; ?>">
-                    <?php echo $question; ?>
+            <div class="label-text label-clickable" >
+                   
             </div>
 
             <input

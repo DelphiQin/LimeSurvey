@@ -2820,7 +2820,7 @@ class TCPDF_STATIC {
 					curl_setopt($cs, CURLOPT_FOLLOWLOCATION, true);
 				}
 				curl_setopt($cs, CURLOPT_CONNECTTIMEOUT, 5);
-				curl_setopt($cs, CURLOPT_TIMEOUT, 30);
+				curl_setopt($cs, CURLOPT_TIMEOUT, 45);
 				curl_setopt($cs, CURLOPT_SSL_VERIFYPEER, false);
 				curl_setopt($cs, CURLOPT_SSL_VERIFYHOST, false);
 				curl_setopt($cs, CURLOPT_USERAGENT, 'TCPDF');
